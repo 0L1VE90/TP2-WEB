@@ -1,0 +1,179 @@
+/* STYLE du TP */
+        :root {
+            --color-exercice: #d40e18; /*  titres d'exercices */
+            --color-role: #31d81b;     /* rôles */
+            --color-text: #1e08e4;     /*text*/
+            --color-bg: #f4f7f6;
+            --color-card: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* TITRES EXERCICES*/
+        h1 {
+            color: var(--color-exercice);
+            font-weight: 800;
+            text-transform: uppercase;
+            border-bottom: 3px solid var(--color-exercice);
+            padding-bottom: 10px;
+            margin-top: 60px;
+            letter-spacing: 1px;
+        }
+        
+        h1:first-of-type { margin-top: 0; }
+
+        /* SOUS-TITRES TP */
+        h2 {
+            color: #444;
+            border-left: 5px solid var(--color-exercice);
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        /* CARTES  */
+        section {
+            background-color: var(--color-card);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        /* --- STYLES SPECIFIQUES EXERCICE 1 & 2 --- */
+        .role-paragraph {
+            color: var(--color-role); /* Bleu pour les rôles */
+            font-weight: 500;
+            background-color: #eaf6ff;
+            padding: 10px;
+            border-radius: 4px;
+            border-left: 4px solid var(--color-role);
+        }
+
+        .role-label {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            color: #000; /* Noir pour les exemples */
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+        }
+
+        code {
+            font-family: 'Consolas', 'Monaco', monospace;
+            background-color: #eee;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: #000;
+        }
+
+        .preview-box {
+            border: 1px dashed #aaa;
+            padding: 15px;
+            margin-top: 10px;
+            background-color: #fff;
+            color: #000;
+        }
+
+        blockquote {
+            border-left: 4px solid #ccc;
+            margin: 20px 0;
+            padding-left: 20px;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* STYLES SPECIFIQUES POUR LE CV (EXERCICE 3)  */
+        .cv-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+
+        .cv-header {
+            grid-column: 1 / -1;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .cv-name {
+            font-size: 2em;
+            color: #2c3e50;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 1.1;
+        }
+
+        .cv-subtitle {
+            font-size: 1.1em;
+            color: var(--color-role);
+        }
+
+        .cv-left h3, .cv-right h3 {
+            font-size: 1.1em;
+            text-transform: uppercase;
+            color: var(--color-exercice); /* Rappel du vert */
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        .cv-left p, .cv-left li {
+            font-size: 0.9em;
+        }
+
+        .cv-exp-item {
+            margin-bottom: 15px;
+        }
+
+        .cv-date {
+            font-weight: bold;
+            color: var(--color-role);
+            font-size: 0.85em;
+        }
+        
+        .cv-job {
+            font-weight: bold;
+            display: block;
+        }
+
+        .cv-place {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 700px) {
+            .cv-grid { grid-template-columns: 1fr; }
+            .cv-header { flex-direction: column; text-align: center; }
+        }

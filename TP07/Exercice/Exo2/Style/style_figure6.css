@@ -1,0 +1,47 @@
+body { 
+margin: 0; 
+text-align: center; 
+font-family: sans-serif; 
+}
+
+.header { 
+background: #5a005a; 
+color: white; height: 50px; 
+line-height: 50px; 
+}
+.nav { 
+background: #0000ff; 
+color: white; 
+height: 30px; 
+line-height: 30px; }
+
+.main-container { 
+    background: pink; 
+    padding: 10px; 
+    overflow: hidden; /* Empêche l'effondrement des parents à cause des floats */
+}
+
+.quart { 
+    width: 48%; 
+    float: left; 
+    margin: 1%; 
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.cell { 
+    width: 46%; 
+    height: 80px; 
+    float: left; 
+    margin: 2%; 
+    border: 1px solid white; 
+    box-sizing: border-box; 
+    color: white;
+}
+
+.rouge { background: red; }
+.orange { background: orange; }
+.vert { background: green; }
+.marron { background: #802020; }
+
+.footer { background: #c0c0c0; clear: both; height: 50px; line-height: 50px; }

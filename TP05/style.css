@@ -1,10 +1,10 @@
 
      :root {
-            --color-exercice: #d40e18; /*  titres d'exercices */
-            --color-role: #31d81b;     /* rôles */
-            --color-text: #1e08e4;     /*text*/
-            --color-bg: #f4f7f6;
-            --color-card: #ffffff;
+            --color-exercice: #e70a15; 
+            --color-role: #07ddbd;     
+            --color-text: #06cabd;     
+            --color-bg: #2d2626;
+            --color-card: #890505;
         }
 
         body {
@@ -20,7 +20,16 @@
             max-width: 900px;
             margin: 0 auto;
         }
-/* Exercice1*/
+h1 {
+            color: var(--color-exercice);
+            font-weight: 800;
+            text-transform: uppercase;
+            border-bottom: 3px solid var(--color-exercice);
+            padding-bottom: 10px;
+            margin-top: 60px;
+            letter-spacing: 1px;
+        }
+        
 table {
     width: 100%;
     border-collapse: collapse;
@@ -38,31 +47,31 @@ th {
     background-color: #f2f2f2;
 }
 
-/* Gestion de la taille réduite du logo dans le tableau */
+
 td img {
     width: 50px;
     height: auto;
     cursor: pointer;
 }
 
-/* Style pour la légende */
+
 caption {
     font-weight: bold;
     margin-bottom: 10px;
 }
-/*Exercice 2*/
+
 table { border-collapse: collapse; width: 100%; font-family: sans-serif; font-size: 0.9em; }
 th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
 
-/* Couleurs des entêtes comme sur l'image */
-.zone-a { background-color: #f39c12; color: white; }
-.zone-b { background-color: #2980b9; color: white; }
-.zone-c { background-color: #27ae60; color: white; }
 
-/*exercice3*/
+.zone-a { background-color: #f39d1290; color: white; }
+.zone-b { background-color: #0873ba94; color: white; }
+.zone-c { background-color: #0cd66075; color: white; }
+
+
 .calendrier { width: 300px; border: 1px solid #b2bec3; }
 .jours th { background-color: #badc58; color: #2d3436; }
 .calendrier td { text-align: center; padding: 5px; border: 1px solid #dfe6e9; }
 
-/* Pour griser les cellules vides à la fin */
+
 .calendrier td:empty { background-color: #f5f6fa; }

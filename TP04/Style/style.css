@@ -1,8 +1,8 @@
 /* STYLE du TP */
         :root {
-            --color-exercice: #d40e18; /*  titres d'exercices */
-            --color-role: #31d81b;     /* rôles */
-            --color-text: #1e08e4;     /*text*/
+            --color-exercice: #d40e18; 
+            --color-role: #31d81b;     
+            --color-text: #1e08e4;     
             --color-bg: #f4f7f6;
             --color-card: #ffffff;
         }
@@ -21,7 +21,7 @@
             margin: 0 auto;
         }
 
-        /* TITRES EXERCICES*/
+        
         h1 {
             color: var(--color-exercice);
             font-weight: 800;

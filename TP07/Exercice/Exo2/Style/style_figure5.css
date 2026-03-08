@@ -1,0 +1,6 @@
+.grille { padding: 10px; overflow: hidden; }
+.bloc { width: 48%; height: 150px; float: left; margin: 1%; }
+.A { background: #45a0a0; } .B { background: #d19a1a; }
+.C { background: #b4b4d8; } .D { background: #0000ff; }
+.turquoise-fonce {background:#9b45a0}
+.violet-fonce {background:#027a8f}

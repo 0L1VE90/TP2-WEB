@@ -2,4 +2,5 @@
 .bloc { width: 48%; height: 150px; float: left; margin: 1%; }
 .A { background: #45a0a0; } .B { background: #d19a1a; }
 .C { background: #b4b4d8; } .D { background: #0000ff; }
-.turquoise-fonce, .violet-fonce { height: 40px; }
+.turquoise-fonce {background: #014141}
+.violet-fonce {background: #2e0058; }
